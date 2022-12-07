@@ -9,10 +9,9 @@ buildscript {
 }
 
 repositories {
+    google()
+            mavenCentral()
     mavenCentral()
-    maven {
-        url "https://maven.google.com"
-    }
 }
 
 
@@ -23,6 +22,7 @@ dependencies {
 apply plugin: 'com.android.library'
 
 android {
+    compileSdkVersion 32
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 32
